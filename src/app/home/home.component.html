@@ -1,0 +1,18 @@
+<div style="padding-right: 5px;">
+<ly-grid container *ngFor="let x of recievedDataFromAPI">
+    <ly-grid  item col="3">
+      <div [className]="classes.item" > {{x.title}}  </div>
+    </ly-grid>
+    <ly-grid item col="4">
+      <div [className]="classes.item" style="padding-right: 5px;"> {{x.url}}   </div>
+    </ly-grid>
+    <ly-grid item col="3" >
+      <div [className]="classes.item"> {{x.created_at}}   </div>
+    </ly-grid>
+    <ly-grid item col="2">
+        <div [className]="classes.item"> {{x.author}}   </div>
+      </ly-grid>
+   
+  </ly-grid>
+</div>
+  
